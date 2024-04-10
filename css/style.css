@@ -1,0 +1,107 @@
+* {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  background-color: #ff98b2;
+}
+
+main {
+  height: 85vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#title {
+  font-family: "Raleway", sans-serif;
+  font-size: 60px;
+  font-weight: 600;
+  color: #fdfdfd;
+}
+
+#button-area {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 300px;
+  height: 300px;
+}
+#button-area #button {
+  font-family: "Raleway", sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  color: #fdfdfd;
+  width: 110px;
+  background-color: #fdfdfd;
+  color: black;
+  border-width: 3px;
+  border-radius: 10px;
+  padding: 5px;
+  border-color: rgba(255, 26, 83, 0.8078431373);
+  border-bottom-color: rgba(255, 26, 83, 0.8078431373);
+  border-right-color: rgba(255, 26, 83, 0.8078431373);
+  cursor: pointer;
+  transition: 0.1s;
+}
+#button-area #button:hover, #button-area #button .btnClicked {
+  color: #fdfdfd;
+  transition: 0.3s;
+  border-color: #fdfdfd;
+  border-bottom-color: #fdfdfd;
+  border-right-color: #fdfdfd;
+  background-color: #ff98b2;
+}
+#button-area .btnClicked {
+  width: 150;
+  transition: 0.5s;
+}
+#button-area .buttonUp {
+  margin-bottom: 230px;
+  transition: 0.1s;
+}
+#button-area .buttonDown {
+  margin-top: 400px;
+  transition: 0.1s;
+}
+#button-area .buttonRight {
+  margin-left: 400px;
+  transition: 0.1s;
+}
+#button-area .buttonLeft {
+  margin-right: 400px;
+  transition: 0.1s;
+}
+#button-area .buttonDiagonal {
+  margin-right: 400px;
+  margin-top: 400px;
+  transition: 0.1s;
+}
+#button-area .buttonDiagonal2 {
+  margin-left: 400px;
+  margin-bottom: 400px;
+  transition: 0.1s;
+}
+#button-area .buttonDiagonal3 {
+  margin-left: 400px;
+  margin-top: 400px;
+  transition: 0.1s;
+}
+#button-area .buttonDiagonal4 {
+  margin-right: 400px;
+  margin-top: 400px;
+  transition: 0.1s;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/*# sourceMappingURL=style.css.map */

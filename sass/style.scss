@@ -1,0 +1,115 @@
+$font: "Raleway", sans-serif;
+
+@import "color/color.scss";
+@mixin flex($justify, $align){
+  display: flex;
+  flex-direction: column;
+  justify-content: $justify;
+  align-items: $align;
+}
+
+@mixin font($font-family, $size, $wheight, $color){
+  font-family: $font-family;
+  font-size: $size;
+  font-weight: $wheight;
+  color: $color
+}
+
+@mixin box-sizing(){
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+}
+
+*{
+  @include box-sizing()
+}
+
+body{
+  background-color: $primary-color;
+}
+
+main{
+  height: 85vh;
+  @include flex(center, center)
+}
+
+#title{
+  @include font($font, 60px, 600, $secondary-color);
+}
+#button-area{
+  @include flex(center, center );
+  width: 300px;
+  height: 300px;
+  #button{
+    @include font($font, 20px, 600, $secondary-color);
+    width: 110px;
+    background-color: $secondary-color;
+    color: black;
+    border-width: 3px;
+    border-radius: 10px;
+    padding: 5px;
+    border-color: $third-color;
+    border-bottom-color: $third-color;
+    border-right-color: $third-color;
+    cursor: pointer;
+    transition: 0.1s;
+  
+    &:hover, .btnClicked{
+      color: $secondary-color;
+      transition: 0.3s;
+      border-color: $secondary-color;
+      border-bottom-color: $secondary-color;
+      border-right-color: $secondary-color;
+      background-color: $primary-color;
+    }
+
+  }
+  .btnClicked{
+    width: 150;
+    transition: 0.5s;
+  }
+  .buttonUp{
+    margin-bottom: 230px;
+    transition: 0.1s;
+  }
+  .buttonDown{
+    margin-top: 400px;
+    transition: 0.1s;
+  }
+  .buttonRight{
+    margin-left: 400px;
+    transition: 0.1s;
+  }
+  .buttonLeft{
+    margin-right: 400px;
+    transition: 0.1s;
+  }
+  .buttonDiagonal{
+    margin-right: 400px;
+    margin-top: 400px;
+    transition: 0.1s;
+  }
+  .buttonDiagonal2{
+    margin-left: 400px;
+    margin-bottom: 400px;
+    transition: 0.1s;
+  }
+  .buttonDiagonal3{
+    margin-left: 400px;
+    margin-top: 400px;
+    transition: 0.1s;
+  }
+  .buttonDiagonal4{
+    margin-right: 400px;
+    margin-top: 400px;
+    transition: 0.1s;
+  }
+
+
+}
+
+.container{
+  @include flex(center, center)
+}
+
